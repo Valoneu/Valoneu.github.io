@@ -16,7 +16,7 @@ body {
 	background-color: rgb(25, 27, 39);
 }
 
-nav {
+header nav {
 	background-color: rgb(35, 35, 55);
 }
 
@@ -83,23 +83,21 @@ footer {
 	background-color: rgb(27, 30, 44);   
 }
 
-footer nav ul li {
+main nav ul li {
 	width: 50vw;
 	list-style-type: none;
 	float: left;
 	text-align: center;
 	vertical-align: center;
 	line-height: calc(3vh + 3vw);
-	font-size: calc(2vh + 3vw);
+	font-size: calc(1.75vh + 2.5vw);
 	background-color: rgb(35, 35, 55);
+	border-radius: 10vw;
+	margin-top: calc((10vh + 2vw)*0.6);
 }
 
-footer nav ul {
+main nav ul {
 	margin: auto;
 	width: 50vw;
 	height: calc((3vh + 3vw) * 4);
 	}
-
-#links {
-	bottom: calc((3vh + 3vw) * 3);
-}
