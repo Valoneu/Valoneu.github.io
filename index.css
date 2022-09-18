@@ -20,20 +20,20 @@ nav {
 	background-color: rgb(39, 30, 30);
 }
 
-nav ul {
+header nav ul {
 margin: auto;
 width: 60vw;
 height: calc(3vh + 3vw);
 }
 
-nav ul li {
+header nav ul li {
 	width: 15vw;
 	list-style-type: none;
 	float: left;
 	text-align: center;
 	vertical-align: center;
 	line-height: calc(3vh + 3vw);
-	font-size: calc(2vh + 3vw);
+	font-size: calc((0.5vh + 8vw) * 0.5);
 	background-color: rgb(39, 30, 30);
 }
 
@@ -67,7 +67,7 @@ h1 {
 
 p {
 	height: auto;
-	padding-top: calc(1vh + 2vw);
+	padding-top: calc((1vh + 2vw) * 6);
 	width: 75vw;
 	margin: auto;
 	font-size: calc(1vh + 1.5vw);
@@ -81,4 +81,25 @@ footer {
 	width: 100%;
 	height: calc(2vh + 3vw);
 	background-color: rgb(39, 30, 30);   
+}
+
+footer nav ul li {
+	width: 50vw;
+	list-style-type: none;
+	float: left;
+	text-align: center;
+	vertical-align: center;
+	line-height: calc(3vh + 3vw);
+	font-size: calc(2vh + 3vw);
+	background-color: rgb(39, 30, 30);
+}
+
+footer nav ul {
+	margin: auto;
+	width: 50vw;
+	height: calc((3vh + 3vw) * 4);
+	}
+
+#links {
+	bottom: calc((3vh + 3vw) * 3);
 }
