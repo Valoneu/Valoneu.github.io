@@ -13,7 +13,7 @@ text-decoration: none;
 }
 
 body {
-	background-color: rgb(25, 27, 39);
+	background-color: rgb(23, 23, 41);
 }
 
 header nav {
@@ -23,7 +23,7 @@ header nav {
 header nav ul {
 margin: auto;
 width: 60vw;
-height: calc(3vh + 3vw);
+height: calc((3vh + 3vw) * 0.5);
 }
 
 header nav ul li {
@@ -32,8 +32,8 @@ header nav ul li {
 	float: left;
 	text-align: center;
 	vertical-align: center;
-	line-height: calc(3vh + 3vw);
-	font-size: calc((0.5vh + 8vw) * 0.5);
+	line-height: calc((3vh + 3vw) * 0.5);
+	font-size: calc((0.5vh + 8vw) * 0.2);
 	background-color: rgb(35, 35, 55);
 }
 
@@ -70,7 +70,7 @@ p {
 	padding-top: calc((1vh + 2vw) * 6);
 	width: 75vw;
 	margin: auto;
-	font-size: calc(1vh + 1.5vw);
+	font-size: calc(0.75vh + 1.5vw);
 	text-align: justify;
 	vertical-align: middle;
 }
@@ -80,24 +80,24 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: calc(2vh + 3vw);
-	background-color: rgb(27, 30, 44);   
+	background-color: rgb(28, 28, 50);   
 }
 
 main nav ul li {
-	width: 50vw;
+	width: 40vw;
 	list-style-type: none;
 	float: left;
 	text-align: center;
 	vertical-align: center;
 	line-height: calc(3vh + 3vw);
-	font-size: calc(1.75vh + 2.5vw);
-	background-color: rgb(35, 35, 55);
-	border-radius: 10vw;
+	font-size: calc((1.75vh + 2.5vw) * 0.5);
+	background-color: rgb(28, 28, 50);
+	border-radius: 5vw;
 	margin-top: calc((10vh + 2vw)*0.6);
 }
 
 main nav ul {
 	margin: auto;
-	width: 50vw;
+	width: 40vw;
 	height: calc((3vh + 3vw) * 4);
-	}
+}
