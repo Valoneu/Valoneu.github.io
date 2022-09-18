@@ -8,16 +8,16 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 font-family: Comfortaa;
-color: rgb(95, 70, 70);
+color: rgb(113, 51, 129);
 text-decoration: none;
 }
 
 body {
-	background-color: rgb(25, 20, 20);
+	background-color: rgb(25, 27, 39);
 }
 
 nav {
-	background-color: rgb(39, 30, 30);
+	background-color: rgb(35, 35, 55);
 }
 
 header nav ul {
@@ -34,23 +34,23 @@ header nav ul li {
 	vertical-align: center;
 	line-height: calc(3vh + 3vw);
 	font-size: calc((0.5vh + 8vw) * 0.5);
-	background-color: rgb(39, 30, 30);
+	background-color: rgb(35, 35, 55);
 }
 
 nav ul li:hover {
-	background-color: rgb(50, 30, 30);
+	background-color: rgb(48, 48, 77);
 }
 
 nav ul li a:hover {
-	color: rgb(158, 116, 116);
+	color: rgb(130, 56, 148);
 	text-decoration: none;
-	text-shadow: rgb(100, 74, 74) 0px 0 10px;
+	text-shadow: rgb(130, 56, 148) 0px 0 10px;
 }
 
 nav ul li a:active {
-	color: rgb(224, 166, 166);
+	color: rgb(145, 63, 165);
 	text-decoration: none;
-	text-shadow: rgb(160, 119, 119) 0px 0 10px;
+	text-shadow: rgb(145, 63, 165) 0px 0 10px;
 }
 
 .clearfix:after {
@@ -60,7 +60,7 @@ nav ul li a:active {
 }
 
 h1 {
-	background-color: rgb(29, 24, 24);
+	background-color: rgb(28, 28, 50);
 	text-align: center;
 	font-size: calc(2vh + 3vw);
 }
@@ -80,7 +80,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: calc(2vh + 3vw);
-	background-color: rgb(39, 30, 30);   
+	background-color: rgb(27, 30, 44);   
 }
 
 footer nav ul li {
@@ -91,7 +91,7 @@ footer nav ul li {
 	vertical-align: center;
 	line-height: calc(3vh + 3vw);
 	font-size: calc(2vh + 3vw);
-	background-color: rgb(39, 30, 30);
+	background-color: rgb(35, 35, 55);
 }
 
 footer nav ul {
