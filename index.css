@@ -68,7 +68,7 @@ h1 {
 p {
 	height: auto;
 	padding-top: calc((1vh + 2vw) * 1.6);
-	width: 75vw;
+	width: 60vw;
 	margin: auto;
 	font-size: calc(0.75vh + 1.5vw);
 	text-align: justify;
