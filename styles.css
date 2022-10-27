@@ -15,14 +15,11 @@ body {
   width: 100vw;
   overflow: hidden;
 }
-
 .darker-green { background-color: var(--DarkerGreen); } 
 .dark-green { background-color: var(--DarkGreen);  } 
 .green { background-color: var(--Green); } 
 .light-green { background-color: var(--LightGreen);  } 
 .whiteish { background-color: var(--Whiteish);  }
-  
-.background { height: 100%; }
 
 .circle {
   aspect-ratio: 1/1;
