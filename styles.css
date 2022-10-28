@@ -5,7 +5,7 @@
 	--Green: #52796f;
 	--LightGreen: #84a98c;
 	--Whiteish: #cad2c5;
-  --AnimationSpeed: 1s
+  --AnimationSpeed: 0.75s
 }
 
 * { padding: 0; margin: 0; transition: all var(--AnimationSpeed); text-decoration: none; list-style: none;}
@@ -41,22 +41,24 @@ body {
 .obj1-1 {
   width: 50vw;
   rotate: 45deg;
+  animation: var(--AnimationSpeed) ease-out 0s 1 RotateRight;
 }
 .obj1-2 {
   height: 110%;
   width: 20.1vw;
   left: 40%;
-  animation: var(--AnimationSpeed) ease-in-out 0s 1 FromLeftMiddleCorner;
+  animation: var(--AnimationSpeed) ease-out 0s 1 FromLeftMiddleCorner;
 }
 .obj1-3 {
   height: 110%;
   width: 20.1vw;
   left: 60%;
-  animation: var(--AnimationSpeed) ease-in-out 0s 1 FromRightMiddleCorner;
+  animation: var(--AnimationSpeed) ease-out 0s 1 FromRightMiddleCorner;
 }
 .obj2 {
   width: 25vw;
   rotate: 45deg;
+  animation: var(--AnimationSpeed) ease-out 0s 1 RotateLeft;
 }
 #name {
   font-size: 6vw;
@@ -70,13 +72,13 @@ body {
   translate: -50% -50%;
 }
 .obj3 { top: 0%; left: 0%; 
-  animation: var(--AnimationSpeed) ease-in-out 0s 1 FromLeftTopCorner;}
+  animation: var(--AnimationSpeed) ease-out 0s 1 FromLeftTopCorner;}
 .obj4 { top: 0%; left: 100%; 
-  animation: var(--AnimationSpeed) ease-in-out 0s 1 FromRightTopCorner;}
+  animation: var(--AnimationSpeed) ease-out 0s 1 FromRightTopCorner;}
 .obj5 { top: 100%; left: 0%; 
-  animation: var(--AnimationSpeed) ease-in-out 0s 1 FromLeftBottomCorner;}
+  animation: var(--AnimationSpeed) ease-out 0s 1 FromLeftBottomCorner;}
 .obj6 { top: 100%; left: 100%; 
-  animation: var(--AnimationSpeed) ease-in-out 0s 1 FromRightBottomCorner;}
+  animation: var(--AnimationSpeed) ease-out 0s 1 FromRightBottomCorner;}
 
 img {
   padding-top: 0.2vw;
@@ -106,7 +108,7 @@ img {
   translate: -50% 0%;
 }
 
-.item0,.item1,.item2,.item3 { top: 0%; left: 50%; animation: var(--AnimationSpeed) ease-in-out 0s 1 FromTopMiddleCorner;}
+.item0,.item1,.item2,.item3 { top: 0%; left: 50%; animation: var(--AnimationSpeed) ease-out 0s 1 FromTopMiddleCorner;}
 
 .menu-whole:hover .item0 {width: 20vw; background-color: var(--Whiteish);}
 .menu-whole:hover .item1 {top: 3.5vw; width: 20vw; background-color: var(--Whiteish);}
@@ -166,4 +168,10 @@ img {
 @keyframes FromTopMiddleCorner { 
   0% { transform: translate(0vw,-100vw); } 
   100% { transform: translate(0%,0%); } }
+@keyframes RotateRight { 
+  0% { transform: rotate(0deg) } 
+  100% { transform: rotate(360deg) } }
+@keyframes RotateLeft { 
+  0% { transform: rotate(-0deg) } 
+  100% { transform: rotate(-360deg) } }
   
