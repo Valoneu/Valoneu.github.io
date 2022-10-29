@@ -42,6 +42,7 @@ body {
   width: 50vw;
   rotate: 45deg;
   animation: var(--AnimationSpeed) ease-out 0s 1 RotateRight;
+  border: 1vmin solid var(--LightGreen);
 }
 .obj1-2 {
   height: 110%;
@@ -59,6 +60,7 @@ body {
   width: 25vw;
   rotate: 45deg;
   animation: var(--AnimationSpeed) ease-out 0s 1 RotateLeft;
+  border: 1vmin solid var(--Green);
 }
 #name {
   font-size: 6vw;
@@ -70,6 +72,7 @@ body {
   position: absolute;
   rotate: 45deg;
   translate: -50% -50%;
+  border: 1vmin solid var(--DarkGreen);
 }
 .obj3 { top: 0%; left: 0%; 
   animation: var(--AnimationSpeed) ease-out 0s 1 FromLeftTopCorner;}
