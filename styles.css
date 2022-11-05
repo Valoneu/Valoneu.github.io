@@ -1,7 +1,7 @@
 :root
 {
 	--DarkerRed: #2a1818;
-	--DarkRed: #3f2323;
+	--DarkRed: #512d2d;
 	--Red: #7c2626;
 	--LightRed: #c35858;
 	--Whiteish: #facaca;
@@ -95,12 +95,14 @@ img {
   height: auto;
 }
 .menu{
-  width: 3vw;
-  height: 3vw;
+  width: 0vw;
+  height: 0vw;
   text-align: center;
   margin: auto;
+  border-radius: 0vh;
   background-color: var(--DarkerRed);
   translate: -50% 0%;
+  border: var(--Whiteish) solid 0vh;
 }
 .menu-items {
   background-color: var(--Red);
@@ -111,13 +113,18 @@ img {
   translate: -50% 0%;
 }
 
-.item0,.item1,.item2,.item3 { top: 0%; left: 50%; animation: var(--AnimationSpeed) ease-out 0s 1 FromTopMiddleCorner;}
+.item0,.item1,.item2,.item3 
+{ top: 0vw; 
+  left: 50%; 
+  animation: var(--AnimationSpeed) ease-out 0s 1 FromTopMiddleCorner;
+  border: var(--DarkRed) solid 0.4vh;
+}
 
 .menu-whole:hover .item0 {width: 20vw; background-color: var(--Whiteish);}
-.menu-whole:hover .item1 {top: 3.5vw; width: 20vw; background-color: var(--Whiteish);}
-.menu-whole:hover .item2 {top: 7vw; width: 20vw; background-color: var(--Whiteish);}
-.menu-whole:hover .item3 {top: 10.5vw; width: 20vw; background-color: var(--Whiteish);}
-.menu-whole:hover .menu  {height: 14.5vw; width: 22vw; background-color: var(--Red); border-radius: 0 0 5% 5%;}
+.menu-whole:hover .item1 {top: 4vw; width: 20vw; background-color: var(--Whiteish);}
+.menu-whole:hover .item2 {top: 8vw; width: 20vw; background-color: var(--Whiteish);}
+.menu-whole:hover .item3 {top: 12vw; width: 20vw; background-color: var(--Whiteish);}
+.menu-whole:hover .menu  {height: 16.5vw; width: 24vw; background-color: var(--Red); border-radius: 0 0 1vh 1vh; border: var(--Whiteish) solid 0.4vh;}
 
 .text {
   top: 50%; left: 50%;
