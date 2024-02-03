@@ -1,6 +1,7 @@
 
 :root {   
-  --text: #f5e9e8;
+  --text: rgb(255, 255, 255);
+  --textdark: #bb8779;
   --background: #0d0404;
   --primary: #e58883;
   --secondary: #901811;
@@ -117,6 +118,6 @@ nav {
 }
 
 p {
-  color: var(--text);
-  font-size: 5rem;
+  color: var(--textdark);
+  font-size: 3rem;
 }
