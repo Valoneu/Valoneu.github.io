@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"> <!-- Theme inherited -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- === Post Specific Info === -->
+		<title>My Journey vibecoding this site // Valoneu</title>
+		<meta name="description" content="How I used AI-driven 'vibecoding' to generate and refine the code for this portfolio site, and the lessons learned.">
+		<!-- ============================ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="img/Iconround.png">
+		<!-- Link to Font Awesome for icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="styles.css"> <!-- Stylesheet contains post styles -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- ===== Navigation (Identical to index.html) ===== -->
+		<nav>
+			<div class="logo">
+				<h1 data-value="Valoneu">Valoneu</h1>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html#main-intro">Home</a></li>
+				<li><a href="index.html#about">About</a></li>
+				<li><a href="index.html#skills">Skills</a></li>
+				<li><a href="index.html#projects">Projects</a></li>
+				<!-- Link back to the section on the main page -->
+				<li><a href="index.html#blog">Blog</a></li>
+			</ul>
+			<div class="nav-controls">
+				<button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme">
+					<i class="fas fa-sun"></i> <i class="fas fa-moon"></i>
+				</button>
+				<ul class="social-icons">
+					<li><a class="nav-item" target="_blank" href="https://www.youtube.com/@Valoneu" aria-label="YouTube"><img class="icon" src="img/youtube.png" alt="YouTube Icon"></a></li>
+					<li><a class="nav-item" target="_blank" href="https://twitter.com/ValoneuPOX" aria-label="Twitter"><img class="icon" src="img/twitter.png" alt="Twitter Icon"></a></li>
+					<li><a class="nav-item" target="_blank" href="https://github.com/Valoneu" aria-label="GitHub"><img class="icon" src="img/github.png" alt="GitHub Icon"></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- ===== Main Blog Post Content ===== -->
+		<main id="blog-post">
+            <div class="post-container"> <!-- Container for max-width and centering -->
+                <article class="blog-post-content">
+                    <!-- === Post Header === -->
+                    <h1>My Journey vibecoding this site</h1>
+                    <p class="post-meta">
+                        Posted by Valoneu on <time datetime="2025-04-03">April 6th, 2025</time>
+                    </p>
+
+                    <!-- === Post Body === -->
+                    <p>This portfolio site you're looking at came together through a process recently dubbed "vibecoding". It wasn't about meticulously hand-crafting every line of code in the traditional sense. Instead, it was an exploration into AI-assisted development. This post details <strong>how I vibecoded this site using an AI code assistant, and what I learned along the way.</strong></p>
+
+                    <p>So, what exactly is vibecoding? As defined recently, it's an AI-dependent technique. You describe a problem or desired feature in natural language to a large language model (LLM) tuned for coding. The AI then generates the code. My role shifted significantly – less manual coding, more guiding the AI, prompting effectively, testing the output, and iteratively refining the generated source code until it matched the 'vibe' I was going for.</p>
+
+                    <h3>Prompting the Visual Flow with CSS</h3>
+                    <p>The process started with high-level prompts. I described the overall structure: a sticky navigation bar, sections for Home, About, Skills, Projects, Blog, and a footer. I specified the desire for a dark theme as the default, using <code>Roboto Mono</code> and <code>Space Mono</code> fonts. The AI generated the initial HTML structure and the CSS including custom properties for theming.</p>
+                    <p>Getting the layouts right, like the project cards and skills grid, involved back-and-forth prompting. I'd ask for a responsive grid layout, then refine it by asking the AI to adjust gaps, alignment, or behavior on different screen sizes. The animated intro section with the morphing shapes was a prime example: I described the effect ("floating, abstract, subtly animated background blobs using theme colors") and iterated with the AI, asking it to tweak animation timings, shapes (`border-radius` percentages), and blur effects until it felt right.</p>
+
+                    <h3>Generating JavaScript for Interaction</h3>
+                    <p>The site's interactivity was also largely AI-generated. For the logo's text scramble effect, I prompted something like: "Create a JavaScript function that scrambles the text of an H1 element on mouseover, revealing the original text letter by letter, and reverts it on mouseout." The AI provided the initial function, which I then tested and potentially asked for modifications (like adjusting the speed).</p>
+                    <p>Similarly, the theme toggle involved asking the AI to write JavaScript that detects the button click, toggles a `data-theme` attribute on the `<html>` tag, and uses `localStorage` to remember the user's preference. The project filtering logic was requested by describing the need to filter elements based on `data-category` attributes when corresponding filter buttons are clicked. The AI generated the event listeners and filtering functions, which I then integrated and tested.</p>
+
+                    <h3>Learnings from the AI Vibes</h3>
+                    <p>Vibecoding with an AI assistant is a fascinating and powerful way to build, especially for personal projects where rapid iteration is key. It significantly speeds up development but introduces its own set of challenges and required skills.</p>
+                    <p>Key takeaways from this process:</p>
+                    <ul>
+                        <li><strong>Prompt Engineering is Crucial:</strong> The quality of the AI's output is highly dependent on the clarity and specificity of the prompts. Learning how to effectively describe requirements to the AI is a skill in itself.</li>
+                        <li><strong>Refinement is Non-Negotiable:</strong> AI-generated code is rarely perfect on the first try. Expect to spend time testing, debugging, and guiding the AI through multiple revisions to get the desired functionality and style.</li>
+                        <li><strong>Understanding Code Still Matters:</strong> While the AI writes the code, you still need to understand it to effectively debug, integrate, and refine it. You can't blindly trust the output.</li>
+                        <li><strong>AI Excels at Boilerplate and Known Patterns:</strong> It's fantastic for generating standard structures, functions (like theme toggles or event listeners), and CSS layouts quickly.</li>
+                        <li><strong>Beware of Subtle Bugs:</strong> AI can sometimes introduce subtle logical errors or edge cases that require careful testing to uncover.</li>
+                    </ul>
+
+                    <p>Overall, vibecoding this site was an insightful experience into the evolving landscape of software development. It allowed me to translate my vision into a functional website much faster than traditional methods might have allowed, while simultaneously honing my skills in guiding and collaborating with an AI code assistant. It's a different way of working, but one with immense potential.</p>
+
+                    <!-- Back link -->
+                    <a href="index.html#blog" class="back-link"><i class="fas fa-arrow-left"></i> Back to Blog Overview</a>
+
+                </article>
+             </div> <!-- End .post-container -->
+		</main>
+
+		<!-- ===== Footer (Identical to index.html) ===== -->
+		<footer class="site-footer">
+			<div class="footer-social-links">
+				<a href="https://www.youtube.com/@Valoneu" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+				<a href="https://twitter.com/ValoneuPOX" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+				<a href="https://github.com/Valoneu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+			</div>
+			<p>© <span id="current-year"></span> Valoneu. All rights reserved.</p>
+			<p><a href="#top" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a></p>
+		</footer>
+
+		<script src="script.js"></script> <!-- Same script -->
+	</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"> <!-- Theme inherited -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- === UPDATE THIS PER POST === -->
+		<title>Blog Post Title // Valoneu</title>
+		<meta name="description" content="Detailed description of this specific blog post goes here.">
+		<!-- ============================ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="img/Iconround.png">
+		<!-- Link to Font Awesome for icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="styles.css"> <!-- Stylesheet now contains post styles -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- ===== Navigation (Identical to index.html) ===== -->
+		<nav>
+			<div class="logo">
+				<h1 data-value="Valoneu">Valoneu</h1>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html#main-intro">Home</a></li>
+				<li><a href="index.html#about">About</a></li>
+				<li><a href="index.html#skills">Skills</a></li>
+				<li><a href="index.html#projects">Projects</a></li>
+				<!-- Link back to the section on the main page OR to blog.html if you created that -->
+				<li><a href="index.html#blog">Blog</a></li>
+			</ul>
+			<div class="nav-controls">
+				<button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme">
+					<i class="fas fa-sun"></i> <i class="fas fa-moon"></i>
+				</button>
+				<ul class="social-icons">
+					<li><a class="nav-item" target="_blank" href="https://www.youtube.com/@Valoneu" aria-label="YouTube"><img class="icon" src="img/youtube.png" alt="YouTube Icon"></a></li>
+					<li><a class="nav-item" target="_blank" href="https://twitter.com/ValoneuPOX" aria-label="Twitter"><img class="icon" src="img/twitter.png" alt="Twitter Icon"></a></li>
+					<li><a class="nav-item" target="_blank" href="https://github.com/Valoneu" aria-label="GitHub"><img class="icon" src="img/github.png" alt="GitHub Icon"></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- ===== Main Blog Post Content ===== -->
+		<main id="blog-post">
+            <div class="post-container"> <!-- Container for max-width and centering -->
+                <article class="blog-post-content">
+                    <!-- === Post Header === -->
+                    <h1>Your Amazing Blog Post Title Goes Here</h1>
+                    <p class="post-meta">
+                        Posted by Valoneu on <time datetime="2023-10-27">October 27, 2023</time>
+                        <!-- Optional: <span> // Filed in: <a href="#">Category</a></span> -->
+                    </p>
+
+                    <!-- === Post Body (Example Content) === -->
+                    <p>This is the introductory paragraph of your blog post. Talk about what the reader can expect to find here. Engage them right away! Maybe mention the core topic, like <strong>modding</strong>, <strong>Blender techniques</strong>, or a <strong>coding challenge</strong>.</p>
+
+                    <p>You can elaborate further in subsequent paragraphs. Use formatting like <em>italics</em> or <code>inline code snippets</code> to highlight specific terms or concepts. Break down complex ideas into digestible chunks.</p>
+
+                    <!-- Example Image -->
+                    <img src="https://placehold.co/800x450/333/ccc?text=Relevant+Post+Image" alt="Placeholder image description">
+
+                    <h3>A Relevant Subheading</h3>
+                    <p>Use subheadings (h3, h4, etc.) to structure your content logically. This makes it easier for readers to scan and understand the flow of information. Discuss a specific aspect of your topic under this heading.</p>
+
+                    <!-- Example Blockquote -->
+                    <blockquote>
+                        "This is a blockquote. Use it to emphasize a quote from someone else, or perhaps a key takeaway point from your own writing. It helps break the visual monotony."
+                    </blockquote>
+
+                    <p>Continue with more details, explanations, or steps. If you're writing a tutorial, this is where you'd list instructions.</p>
+
+                    <h3>Code Examples</h3>
+                    <p>If your post involves code, use `pre` and `code` tags for proper formatting and potential syntax highlighting (though basic styling is provided here). For example, here's a simple C# snippet:</p>
+
+                    <!-- Example Code Block -->
+                    <pre><code class="language-csharp">
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Hello, World!");
+        // Add some comments for context
+        int x = 5;
+        int y = 10;
+        Console.WriteLine($"The sum is: {x + y}");
+    }
+}
+                    </code></pre>
+
+                    <p>Conclude your post by summarizing the key points, offering final thoughts, or posing a question to encourage discussion.</p>
+
+                    <!-- Back link -->
+                    <a href="index.html#blog" class="back-link"><i class="fas fa-arrow-left"></i> Back to Blog Overview</a>
+                     <!-- Or link to blog.html if you are using that -->
+
+                </article>
+             </div> <!-- End .post-container -->
+		</main>
+
+		<!-- ===== Footer (Identical to index.html) ===== -->
+		<footer class="site-footer">
+			<div class="footer-social-links">
+				<a href="https://www.youtube.com/@Valoneu" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+				<a href="https://twitter.com/ValoneuPOX" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+				<a href="https://github.com/Valoneu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+			</div>
+			<p>© <span id="current-year"></span> Valoneu. All rights reserved.</p> <!-- Corrected the closing tag here -->
+			<p><a href="#top" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a></p>
+		</footer>
+
+		<script src="script.js"></script> <!-- Same script -->
+	</body>
+</html>
