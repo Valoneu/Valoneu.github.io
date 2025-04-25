@@ -1,101 +1,109 @@
+<!-- blog1.html -->
 <!DOCTYPE html>
-<html lang="en" data-theme="dark"> <!-- Theme inherited -->
+<html lang="en" data-theme="dark">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!-- === Post Specific Info === -->
-		<title>My Journey vibecoding this site // Valoneu</title>
-		<meta name="description" content="How I used AI-driven 'vibecoding' to generate and refine the code for this portfolio site, and the lessons learned.">
-		<!-- ============================ -->
+		<title>Building This Site With AI // Valoneu</title>
+		<meta name="description" content="How I used AI tools to help build this portfolio website, the process, and what I learned.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="img/Iconround.png">
-		<!-- Link to Font Awesome for icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="styles.css"> <!-- Stylesheet contains post styles -->
+		<!-- Link Prism Theme CSS (Okaidia) - Removed integrity/crossorigin -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" />
+		<link rel="stylesheet" href="styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<!-- ===== Navigation (Identical to index.html) ===== -->
+		<div class="cursor-outline"></div>
+		<div class="cursor-dot"></div>
+		<div id="particles-js"></div>
+
 		<nav>
-			<div class="logo">
-				<h1 data-value="Valoneu">Valoneu</h1>
-			</div>
-			<ul class="nav-links">
-				<li><a href="index.html#main-intro">Home</a></li>
-				<li><a href="index.html#about">About</a></li>
-				<li><a href="index.html#skills">Skills</a></li>
-				<li><a href="index.html#projects">Projects</a></li>
-				<!-- Link back to the section on the main page -->
-				<li><a href="index.html#blog">Blog</a></li>
-			</ul>
+			<div class="logo"><h1 data-value="Valoneu">Valoneu</h1></div>
+			<ul class="nav-links"><li><a href="index.html#main-intro">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#blog">Blog</a></li></ul>
 			<div class="nav-controls">
-				<button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme">
-					<i class="fas fa-sun"></i> <i class="fas fa-moon"></i>
-				</button>
-				<ul class="social-icons">
-					<li><a class="nav-item" target="_blank" href="https://www.youtube.com/@Valoneu" aria-label="YouTube"><img class="icon" src="img/youtube.png" alt="YouTube Icon"></a></li>
-					<li><a class="nav-item" target="_blank" href="https://twitter.com/ValoneuPOX" aria-label="Twitter"><img class="icon" src="img/twitter.png" alt="Twitter Icon"></a></li>
-					<li><a class="nav-item" target="_blank" href="https://github.com/Valoneu" aria-label="GitHub"><img class="icon" src="img/github.png" alt="GitHub Icon"></a></li>
-				</ul>
+				<button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme"><i class="fas fa-sun"></i> <i class="fas fa-moon"></i></button>
+				<ul class="social-icons"><li><a class="nav-item" target="_blank" href="https://www.youtube.com/@Valoneu" aria-label="YouTube"><img class="icon" src="img/youtube.png" alt="YouTube Icon"></a></li><li><a class="nav-item" target="_blank" href="https://twitter.com/ValoneuPOX" aria-label="Twitter"><img class="icon" src="img/twitter.png" alt="Twitter Icon"></a></li><li><a class="nav-item" target="_blank" href="https://github.com/Valoneu" aria-label="GitHub"><img class="icon" src="img/github.png" alt="GitHub Icon"></a></li></ul>
 			</div>
 		</nav>
 
-		<!-- ===== Main Blog Post Content ===== -->
 		<main id="blog-post">
-            <div class="post-container"> <!-- Container for max-width and centering -->
-                <article class="blog-post-content">
-                    <!-- === Post Header === -->
-                    <h1>My Journey vibecoding this site</h1>
-                    <p class="post-meta">
-                        Posted by Valoneu on <time datetime="2025-04-03">April 6th, 2025</time>
-                    </p>
+			<div class="post-container">
+				<article class="blog-post-content">
+					<h1>Building This Site With AI</h1>
+					<p class="post-meta">Posted by Valoneu on <time datetime="2025-04-06">April 6, 2025</time></p>
 
-                    <!-- === Post Body === -->
-                    <p>This portfolio site you're looking at came together through a process recently dubbed "vibecoding". It wasn't about meticulously hand-crafting every line of code in the traditional sense. Instead, it was an exploration into AI-assisted development. This post details <strong>how I vibecoded this site using an AI code assistant, and what I learned along the way.</strong></p>
+					<p>You might be interested to know that this website was built largely with the help of AI tools, like ChatGPT. Instead of writing every line of code myself, I often described what I wanted to an AI, and it generated the code for me. This post explains <strong>how I used AI to create this site and what I learned from doing it this way.</strong></p>
+					<figure><img src="./img/site.webp" alt="Screenshot of the portfolio website homepage"><figcaption>The finished portfolio site homepage.</figcaption></figure>
+					<p>Basically, the process involved telling the AI what features or looks I wanted using plain English. The AI would then try to write the HTML, CSS, or JavaScript code needed. My job was mostly to guide the AI by writing good descriptions (prompts), checking the code it gave me, testing everything, and asking for changes until it looked and worked the way I wanted.</p>
 
-                    <p>So, what exactly is vibecoding? As defined recently, it's an AI-dependent technique. You describe a problem or desired feature in natural language to a large language model (LLM) tuned for coding. The AI then generates the code. My role shifted significantly – less manual coding, more guiding the AI, prompting effectively, testing the output, and iteratively refining the generated source code until it matched the 'vibe' I was going for.</p>
+					<h2>Getting the Look Right with AI Prompts</h2>
+					<p>I started by telling the AI the basic layout: a navigation bar at the top, different sections for Home, About, Skills, etc., and a footer at the bottom. I also specified things like the dark theme and the fonts (Roboto Mono and Space Mono). The AI generated the first draft of the HTML and CSS.</p>
+					<blockquote>Getting things like the project cards or the skills grid to look right took more back-and-forth. I'd ask for a responsive grid, then tell the AI to adjust spacing, alignment, or how it looked on different screen sizes.</blockquote>
+					<p>The animated intro section with the moving background shapes is a good example. I described the effect I wanted ("background shapes that change shape and move around smoothly, using the site's colors") and worked with the AI through several tries, tweaking animation settings, shapes, and blur until it felt right.</p>
 
-                    <h3>Prompting the Visual Flow with CSS</h3>
-                    <p>The process started with high-level prompts. I described the overall structure: a sticky navigation bar, sections for Home, About, Skills, Projects, Blog, and a footer. I specified the desire for a dark theme as the default, using <code>Roboto Mono</code> and <code>Space Mono</code> fonts. The AI generated the initial HTML structure and the CSS including custom properties for theming.</p>
-                    <p>Getting the layouts right, like the project cards and skills grid, involved back-and-forth prompting. I'd ask for a responsive grid layout, then refine it by asking the AI to adjust gaps, alignment, or behavior on different screen sizes. The animated intro section with the morphing shapes was a prime example: I described the effect ("floating, abstract, subtly animated background blobs using theme colors") and iterated with the AI, asking it to tweak animation timings, shapes (`border-radius` percentages), and blur effects until it felt right.</p>
+					<h2>Creating Interactive Features with JavaScript</h2>
+					<p>AI also helped with the interactive parts of the site. For the logo text effect, I asked something like, "Make the text in the H1 logo scramble when the mouse hovers over it, then reveal the real text, and go back to normal when the mouse leaves." The AI gave me working code, which I then tested and adjusted (like changing the animation speed).</p>
+					<p>Similarly, for the theme toggle button, I asked for JavaScript code that would switch the theme when clicked, remember the choice using `localStorage`, and update the page's look. For the project filters, I explained that clicking a button should show or hide projects based on their category. The AI generated the necessary code, which I then had to integrate and make sure worked correctly.</p>
 
-                    <h3>Generating JavaScript for Interaction</h3>
-                    <p>The site's interactivity was also largely AI-generated. For the logo's text scramble effect, I prompted something like: "Create a JavaScript function that scrambles the text of an H1 element on mouseover, revealing the original text letter by letter, and reverts it on mouseout." The AI provided the initial function, which I then tested and potentially asked for modifications (like adjusting the speed).</p>
-                    <p>Similarly, the theme toggle involved asking the AI to write JavaScript that detects the button click, toggles a `data-theme` attribute on the `<html>` tag, and uses `localStorage` to remember the user's preference. The project filtering logic was requested by describing the need to filter elements based on `data-category` attributes when corresponding filter buttons are clicked. The AI generated the event listeners and filtering functions, which I then integrated and tested.</p>
+					<hr>
 
-                    <h3>Learnings from the AI Vibes</h3>
-                    <p>Vibecoding with an AI assistant is a fascinating and powerful way to build, especially for personal projects where rapid iteration is key. It significantly speeds up development but introduces its own set of challenges and required skills.</p>
-                    <p>Key takeaways from this process:</p>
-                    <ul>
-                        <li><strong>Prompt Engineering is Crucial:</strong> The quality of the AI's output is highly dependent on the clarity and specificity of the prompts. Learning how to effectively describe requirements to the AI is a skill in itself.</li>
-                        <li><strong>Refinement is Non-Negotiable:</strong> AI-generated code is rarely perfect on the first try. Expect to spend time testing, debugging, and guiding the AI through multiple revisions to get the desired functionality and style.</li>
-                        <li><strong>Understanding Code Still Matters:</strong> While the AI writes the code, you still need to understand it to effectively debug, integrate, and refine it. You can't blindly trust the output.</li>
-                        <li><strong>AI Excels at Boilerplate and Known Patterns:</strong> It's fantastic for generating standard structures, functions (like theme toggles or event listeners), and CSS layouts quickly.</li>
-                        <li><strong>Beware of Subtle Bugs:</strong> AI can sometimes introduce subtle logical errors or edge cases that require careful testing to uncover.</li>
-                    </ul>
+					<h2>What I Learned from Working with AI</h2>
+					<p>Using AI to help code can be really useful, especially for getting started quickly on personal projects. It speeds things up, but it also requires a different way of working.</p>
+					<p>Here are some key things I learned:</p>
+					<ul><li><strong>Clear Instructions are Key:</strong> The better you explain what you want to the AI, the better the code it gives you. Learning how to write good prompts is important.</li><li><strong>You Still Need to Check and Refine:</strong> AI code isn't always perfect the first time. You need to spend time testing, finding bugs, and telling the AI how to fix or improve the code.</li><li><strong>Understanding Code is Still Essential:</strong> Even though the AI writes code, you really need to understand HTML, CSS, and JavaScript (or whatever you're working with) to spot problems, make changes, and put everything together correctly. You can't just trust the AI blindly. You can find more tips on writing prompts <a href="#">here</a> (example link).</li><li><strong>AI is Good for Standard Stuff:</strong> It's great at quickly generating common code snippets, like setting up basic layouts, theme toggles, or simple event handlers.</li><li><strong>Watch Out for Subtle Bugs:</strong> Sometimes the AI makes small mistakes or doesn't think about all possible situations (edge cases), so careful testing is crucial.</li></ul>
 
-                    <p>Overall, vibecoding this site was an insightful experience into the evolving landscape of software development. It allowed me to translate my vision into a functional website much faster than traditional methods might have allowed, while simultaneously honing my skills in guiding and collaborating with an AI code assistant. It's a different way of working, but one with immense potential.</p>
+					<pre class="language-javascript" data-lang="JavaScript"><code>
+// Simple example of AI-generated theme toggle setup
+const themeBtn = document.getElementById('theme-toggle');
+// Get saved theme or default to 'dark'
+const current = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', current);
 
-                    <!-- Back link -->
-                    <a href="index.html#blog" class="back-link"><i class="fas fa-arrow-left"></i> Back to Blog Overview</a>
+// When the button is clicked
+themeBtn.addEventListener('click', () => {
+  // Figure out the new theme
+  let newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  // Apply the new theme to the page
+  document.documentElement.setAttribute('data-theme', newTheme);
+  // Save the choice
+  localStorage.setItem('theme', newTheme);
+});
+					</code></pre>
 
-                </article>
-             </div> <!-- End .post-container -->
+					<p>Overall, building this portfolio with AI help was interesting. It showed me a different way to develop websites. It was faster than doing everything manually, but it also required learning how to work effectively with the AI tool. It's a different approach to building things, and it definitely has potential.</p>
+
+					<a href="index.html#blog" class="back-link"><i class="fas fa-arrow-left"></i> Return to Blog</a>
+
+				</article>
+			 </div>
 		</main>
 
-		<!-- ===== Footer (Identical to index.html) ===== -->
 		<footer class="site-footer">
-			<div class="footer-social-links">
-				<a href="https://www.youtube.com/@Valoneu" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-				<a href="https://twitter.com/ValoneuPOX" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-				<a href="https://github.com/Valoneu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-			</div>
+			<div class="footer-social-links"><a href="https://www.youtube.com/@Valoneu" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a><a href="https://twitter.com/ValoneuPOX" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="https://github.com/Valoneu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
 			<p>© <span id="current-year"></span> Valoneu. All rights reserved.</p>
-			<p><a href="#top" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a></p>
+			<p><a href="#top" class="back-to-top">Back to Top <i class="fas fa-angle-double-up"></i></a></p>
 		</footer>
 
-		<script src="script.js"></script> <!-- Same script -->
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<!-- Add Prism Core JS - Removed integrity/crossorigin -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+		<!-- Add Prism Autoloader - Removed integrity/crossorigin -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+		<script src="script.js"></script>
+		<!-- Explicitly trigger Prism highlighting after other scripts -->
+		<script>
+			// Ensure Prism is loaded before highlighting
+			document.addEventListener('DOMContentLoaded', () => {
+				if (window.Prism) {
+					Prism.highlightAll();
+				} else {
+					console.warn("Prism.js not loaded when highlightAll was called.");
+				}
+			});
+		</script>
 	</body>
 </html>

@@ -1,13 +1,13 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en" data-theme="dark"> <!-- Default theme is dark -->
+<html lang="en" data-theme="dark">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Valoneu // Portfolio</title>
-		<meta name="description" content="Personal portfolio website for Valoneu. Student at CVUT FIT, Modder, Blender artist, programmer.">
+		<meta name="description" content="Hi, I'm Valoneu. Check out my work in coding, 3D art, and game modding.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="img/Iconround.png">
-		<!-- Link to Font Awesome for icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,254 +15,80 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 	</head>
 	<body>
+		<div class="cursor-outline"></div>
+		<div class="cursor-dot"></div>
+		<div id="particles-js"></div>
+
 		<nav>
-			<div class="logo">
-				<h1 data-value="Valoneu">Valoneu</h1>
-			</div>
-			<ul class="nav-links">
-				<li><a href="#main-intro">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#blog">Blog</a></li>
-			</ul>
+			<div class="logo"><h1 data-value="Valoneu">Valoneu</h1></div>
+			<ul class="nav-links"><li><a href="#main-intro">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#blog">Blog</a></li></ul>
 			<div class="nav-controls">
-				<button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme">
-					<i class="fas fa-sun"></i> <i class="fas fa-moon"></i>
-				</button>
-				<ul class="social-icons">
-					<li><a class="nav-item" target="_blank" href="https://www.youtube.com/@Valoneu" aria-label="YouTube"><img class="icon" src="img/youtube.png" alt="YouTube Icon"></a></li>
-					<li><a class="nav-item" target="_blank" href="https://twitter.com/ValoneuPOX" aria-label="Twitter"><img class="icon" src="img/twitter.png" alt="Twitter Icon"></a></li>
-					<li><a class="nav-item" target="_blank" href="https://github.com/Valoneu" aria-label="GitHub"><img class="icon" src="img/github.png" alt="GitHub Icon"></a></li>
-				</ul>
+				<button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme"><i class="fas fa-sun"></i> <i class="fas fa-moon"></i></button>
+				<ul class="social-icons"><li><a class="nav-item" target="_blank" href="https://www.youtube.com/@Valoneu" aria-label="YouTube"><img class="icon" src="img/youtube.png" alt="YouTube Icon"></a></li><li><a class="nav-item" target="_blank" href="https://twitter.com/ValoneuPOX" aria-label="Twitter"><img class="icon" src="img/twitter.png" alt="Twitter Icon"></a></li><li><a class="nav-item" target="_blank" href="https://github.com/Valoneu" aria-label="GitHub"><img class="icon" src="img/github.png" alt="GitHub Icon"></a></li></ul>
 			</div>
 		</nav>
-		<!-- Main Intro Section - Centered Text -->
-		<main id="main-intro" class="main-intro-section centered-intro">
-			<!-- intro-text now has the load animation -->
-			<div class="intro-text animate-load">
-				<!-- Decorative Elements added via CSS to parent and this -->
-				<h2>Hey, I'm Valoneu!</h2>
-				<p class="intro-tagline">I'm exploring Coding and Art.</p>
 
+		<main id="main-intro" class="main-intro-section centered-intro">
+			<div class="intro-text animate-load">
+				<h2>Valoneu.</h2>
+				<p class="intro-tagline">Code, Art, Interaction.</p>
 			</div>
 		</main>
 
-		<!-- About Section -->
 		<section id="about" class="content-section about-section">
 			<div class="section-content-wrapper">
 				<h2>About Me</h2>
-				<p>
-					I'm currently studying Computer Science at CVUT FIT in Prague. I love learning about new technologies and their applications in the realm of coding and art.
-					I spend my free time gaming, modding, making 3d and making whatever code doodles i want. 
-					I primarly code in C++ and some JavaScript and Java, I know PSQL and some Python, but I am not a pro at any of them.
-					In 3D i use Blender for modelling and rendering i have interest in hard surface modeling a modelling real life objects, and Aseprite for pixel art. I also dabble in modding for Unity games and Factorio.
-					I'm always eager to learn about interesting subjects and imprive my skills in programming and 3D modeling.
-					<br><br>
-					When I'm not coding or creating, you can find me playing games, exploring new mods, or working on my next project. I also enjoy sharing my journey and insights through my blog.
-				</p>
-				<a href="nothing.pdf" download class="button resume-button">
-					<i class="fas fa-download"></i> Download Resume (not available yet)
-				</a>
+				<p>Hey there! I'm a Computer Science student at CVUT FIT in Prague. I enjoy combining technology with creative work, focusing on coding, 3D modeling, and game modding.<br><br>I program in C++, C#, Java, JavaScript, and Python, and have some experience with databases. For art, I use Blender for 3D projects and Aseprite for pixel art. I particularly like modding games like Factorio and Unity games. Building interfaces with HTML, CSS, and JavaScript is also something I enjoy.<br><br>I'm always trying to learn more in both programming and art. This website shows some of my work. Feel free to check out my blog for updates on what I'm up to.</p>
+				<a href="nothing.pdf" download class="button resume-button"><i class="fas fa-file-alt"></i> My Resume (Link Soon)</a>
 			</div>
 		</section>
 
-		<!-- Skills Section -->
 		<section id="skills" class="content-section skills-section">
 			<div class="section-content-wrapper">
-				<h2>Skills</h2>
+				<h2>What I Can Do</h2>
 				<div class="skills-grid">
-					<div class="skill-category">
-						<h3><i class="fas fa-code"></i> Programming</h3>
-						<ul>
-							<li>C++ (High Performance, UNI)</li>
-							<li>C# (Game Mods)</li>
-							<li>Python (Scripting, AI)</li>
-							<li>HTML & CSS (Web and Apps)</li>
-							<li>JavaScript (Web and Apps)</li>
-						</ul>
-					</div>
-					<div class="skill-category">
-						<h3><i class="fas fa-palette"></i> Art tools</h3>
-						<ul>
-							<li>Blender (3D Modeling, Texturing)</li>
-							<li>Aseprite (Pixel art)</li>
-							<li>Substance Painter basics (Materials, Textures)</li>
-						</ul>
-					</div>
-					<div class="skill-category">
-						<h3><i class="fas fa-cogs"></i> Other</h3>
-						<ul>
-							<li>Git & GitHub (Version Control)</li>
-							<li>Modding Tools ([Game Specific?])</li>
-							<li>Postgress SQL (Databases)</li>
-							<li>Linux (Operating System)</li>
-							<li>Problem Solving</li>
-						</ul>
-					</div>
+					<div class="skill-category animate-on-scroll"><h3><i class="fas fa-terminal"></i> Coding & Web</h3><ul><li>C++ (Performance)</li><li>C# (Unity, Applications)</li><li>Java (Backend Development)</li><li>Python (Scripting, Tools)</li><li>JavaScript (Websites, UI)</li><li>HTML & CSS (Web Pages, UI)</li></ul></div>
+					<div class="skill-category animate-on-scroll"><h3><i class="fas fa-drafting-compass"></i> Art & Design</h3><ul><li>Blender (3D Modeling)</li><li>Aseprite (Pixel Art)</li><li>Substance Painter (Texturing)</li><li>Hard Surface Modeling</li><li>Visual Design</li></ul></div>
+					<div class="skill-category animate-on-scroll"><h3><i class="fas fa-wrench"></i> Tools & Skills</h3><ul><li>Git & GitHub (Version Control)</li><li>Game Modding (Unity, Factorio)</li><li>PostgreSQL (Databases)</li><li>Linux Usage</li><li>Problem Solving</li><li>Team Collaboration</li></ul></div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Projects Section -->
 		<section id="projects" class="content-section projects-section">
 			<div class="section-content-wrapper">
-				<h2>Projects</h2>
-				<div class="project-filters">
-					<button class="filter-button active" data-filter="all">All</button>
-					<button class="filter-button" data-filter="code">Code</button>
-					<button class="filter-button" data-filter="blender">Blender</button>
-					<button class="filter-button" data-filter="pixelart">Pixel Art</button>
-					<button class="filter-button" data-filter="other">Other</button>
-				</div>
+				<h2>My Projects</h2>
+				<div class="project-filters"><button class="filter-button active" data-filter="all">All</button><button class="filter-button" data-filter="code">Code</button><button class="filter-button" data-filter="blender">3D Art</button><button class="filter-button" data-filter="pixelart">Pixel Art</button><button class="filter-button" data-filter="other">Other</button></div>
 				<div class="project-grid">
-					<!-- Code projects Section -->
-					<div class="project-card animate-on-scroll" data-category="code">
-						<div class="project-image">
-							<img src="./img/DSP.webp" alt="Project Mod Placeholder">
-							<div class="project-image-overlay">
-								<h4>Dyson Sphere Program mods</h4>
-								<a href="https://github.com/Valoneu/DysonSphereMods" class="button-view-project" target="_blank">View repository</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>DSP mods, C#</p></div>
-					</div>
-
-					<div class="project-card animate-on-scroll" data-category="code">
-						<div class="project-image">
-							<img src="/img/timberborn.webp" alt="Project Mod Placeholder">
-							<div class="project-image-overlay">
-								<h4>Timberborn mods</h4>
-								<a href="https://github.com/Valoneu/TimberbornMods" class="button-view-project" target="_blank">View repository</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>Timberborn mods, C#</p></div>
-					</div>
-
-					<div class="project-card animate-on-scroll" data-category="code">
-						<div class="project-image">
-							<img src="./img/factorio.webp" alt="Project Mod Placeholder">
-							<div class="project-image-overlay">
-								<h4>Factorio mods</h4>
-								<a href="https://github.com/Valoneu/FactorioMods" class="button-view-project" target="_blank">View repository</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>Factorio mods, Lua</p></div>
-					</div>
-
-					<div class="project-card animate-on-scroll" data-category="code">
-						<div class="project-image">
-							<img src="./img/WPapp.webp" alt="Project Mod Placeholder">
-							<div class="project-image-overlay">
-								<h4>Desktop app with pc stats</h4>
-								<a href="https://github.com/Valoneu/Desktop-background-app" class="button-view-project" target="_blank">View repository</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>Desktop App, JS HTML CSS</p></div>
-					</div>
-
-					<!-- Blender projects Section -->
-					<div class="project-card animate-on-scroll" data-category="blender">
-						<div class="project-image">
-							<img src="./img/Blender1.webp" alt="Project Blender Placeholder">
-							<div class="project-image-overlay">
-								<h4>My table i designed</h4>
-								<a href="#" class="button-view-project" target="_blank">View nowhere right now :)</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>Blender, Cycles</p></div>
-					</div>
-
-					<div class="project-card animate-on-scroll" data-category="blender">
-						<div class="project-image">
-							<img src="./img/Blender2.webp" alt="Project Blender Placeholder">
-							<div class="project-image-overlay">
-								<h4>Frieren's wand from anime</h4>
-								<a href="#" class="button-view-project" target="_blank">View nowhere right now :)</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>Blender, Cycles</p></div>
-					</div>
-
-					<div class="project-card animate-on-scroll" data-category="blender">
-						<div class="project-image">
-							<img src="./img/Blender3.webp" alt="Project Blender Placeholder">
-							<div class="project-image-overlay">
-								<h4>Hardsurface arm</h4>
-								<a href="#" class="button-view-project" target="_blank">View nowhere right now :)</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>Blender, Cycles</p></div>
-					</div>
-
-					<div class="project-card animate-on-scroll" data-category="blender">
-						<div class="project-image">
-							<img src="./img/Blender4.webp" alt="Project Blender Placeholder">
-							<div class="project-image-overlay">
-								<h4>Abstract cube</h4>
-								<a href="#" class="button-view-project" target="_blank">View nowhere right now :)</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>Blender, Cycles</p></div>
-					</div>
-
-					<!-- Pixelart projects Section -->
-					<div class="project-card animate-on-scroll" data-category="pixelart">
-						<div class="project-image">
-							<img src="/img/Barrelpixel.webp" alt="Project Pixel Placeholder">
-							 <div class="project-image-overlay">
-								<h4>My 1. pixelart</h4>
-								<a href="#" class="button-view-project" target="_blank">View nowhere right now :)</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>Made with Aseprite</p></div>
-					</div>
-
-					<div class="project-card animate-on-scroll" data-category="pixelart">
-						<div class="project-image">
-							<img src="/img/Isometrictilemap32x32.webp" alt="Project Pixel Placeholder">
-							 <div class="project-image-overlay">
-								<h4>Isometric tilemap</h4>
-								<a href="#" class="button-view-project" target="_blank">View nowhere right now :)</a>
-							</div>
-						</div>
-						<div class="project-content-brief"><p>Made with Aseprite</p></div>
-					</div>
-
+					<div class="project-card animate-on-scroll" data-category="code"><div class="project-image"><img src="./img/DSP.webp" alt="DSP Mods"><div class="project-image-overlay"><h4>DSP Game Mods</h4><a href="https://github.com/Valoneu/DysonSphereMods" class="button button-view-project" target="_blank">See Code</a></div></div><div class="project-content-brief"><p>Mods for Dyson Sphere Program (C#)</p></div></div>
+					<div class="project-card animate-on-scroll" data-category="code"><div class="project-image"><img src="/img/timberborn.webp" alt="Timberborn Mods"><div class="project-image-overlay"><h4>Timberborn Game Mods</h4><a href="https://github.com/Valoneu/TimberbornMods" class="button button-view-project" target="_blank">See Code</a></div></div><div class="project-content-brief"><p>Mods for Timberborn (C#)</p></div></div>
+					<div class="project-card animate-on-scroll" data-category="code"><div class="project-image"><img src="./img/factorio.webp" alt="Factorio Mods"><div class="project-image-overlay"><h4>Factorio Game Mods</h4><a href="https://github.com/Valoneu/FactorioMods" class="button button-view-project" target="_blank">See Code</a></div></div><div class="project-content-brief"><p>Mods for Factorio (Lua)</p></div></div>
+					<div class="project-card animate-on-scroll" data-category="code other"><div class="project-image"><img src="./img/WPapp.webp" alt="Desktop App"><div class="project-image-overlay"><h4>Desktop Info App</h4><a href="https://github.com/Valoneu/Desktop-background-app" class="button button-view-project" target="_blank">See Code</a></div></div><div class="project-content-brief"><p>Shows PC stats on desktop (JS/Web)</p></div></div>
+					<div class="project-card animate-on-scroll" data-category="blender"><div class="project-image"><img src="./img/Blender1.webp" alt="3D Table"><div class="project-image-overlay"><h4>3D Table Design</h4><a href="#" class="button button-view-project disabled" target="_blank">View Image</a></div></div><div class="project-content-brief"><p>Furniture concept (Blender)</p></div></div>
+					<div class="project-card animate-on-scroll" data-category="blender"><div class="project-image"><img src="./img/Blender2.webp" alt="3D Staff"><div class="project-image-overlay"><h4>Frieren's Staff (3D)</h4><a href="#" class="button button-view-project disabled" target="_blank">View Image</a></div></div><div class="project-content-brief"><p>Anime prop recreation (Blender)</p></div></div>
+					<div class="project-card animate-on-scroll" data-category="blender"><div class="project-image"><img src="./img/Blender3.webp" alt="3D Arm"><div class="project-image-overlay"><h4>Sci-Fi Arm (3D)</h4><a href="#" class="button button-view-project disabled" target="_blank">View Image</a></div></div><div class="project-content-brief"><p>Hard surface practice (Blender)</p></div></div>
+					<div class="project-card animate-on-scroll" data-category="blender"><div class="project-image"><img src="./img/Blender4.webp" alt="3D Cube Art"><div class="project-image-overlay"><h4>Abstract 3D Cube</h4><a href="#" class="button button-view-project disabled" target="_blank">View Image</a></div></div><div class="project-content-brief"><p>Geometric art experiment (Blender)</p></div></div>
+					<div class="project-card animate-on-scroll" data-category="pixelart"><div class="project-image"><img src="/img/Barrelpixel.webp" alt="Pixel Barrel"><div class="project-image-overlay"><h4>Pixel Art Barrel</h4><a href="#" class="button button-view-project disabled" target="_blank">View Art</a></div></div><div class="project-content-brief"><p>Pixel art practice (Aseprite)</p></div></div>
+					<div class="project-card animate-on-scroll" data-category="pixelart"><div class="project-image"><img src="/img/Isometrictilemap32x32.webp" alt="Pixel Tiles"><div class="project-image-overlay"><h4>Pixel Art Tileset</h4><a href="#" class="button button-view-project disabled" target="_blank">View Art</a></div></div><div class="project-content-brief"><p>Isometric game tiles (Aseprite)</p></div></div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Blog Section -->
 		<section id="blog" class="content-section blog-section">
 			<div class="section-content-wrapper">
-				<h2>Latest Updates / Blog</h2>
+				<h2>Blog & Updates</h2>
 				<div class="blog-posts-grid">
-
-					<article class="blog-post-summary animate-on-scroll">
-						<img src="./img/site.webp" alt="Blog Post Placeholder Image" class="blog-summary-image">
-						<div class="blog-summary-content">
-							<h3 class="blog-summary-title">My Journey vibecoding this site</h3>
-							<p class="blog-summary-meta">Posted on <time datetime="2025-04-03">April 6th, 2025</time></p>
-							<p class="blog-summary-excerpt">How i vibe coded this site, and what i learned along the way.</p>
-							<a href="blog1.html" class="button blog-read-more">Read More</a>
-						</div>
-					</article>
-
+					<article class="blog-post-summary animate-on-scroll"><img src="./img/site.webp" alt="Blog Post Image" class="blog-summary-image"><div class="blog-summary-content"><h3 class="blog-summary-title">Building This Site With AI Help</h3><p class="blog-summary-meta">Posted on <time datetime="2025-04-06">April 6, 2025</time></p><p class="blog-summary-excerpt">How I used AI tools like ChatGPT to help build this website. A look at the process and what I learned.</p><a href="blog1.html" class="button blog-read-more">Read More</a></div></article>
 				</div>
 			</div>
 		</section>
-		<!-- Footer -->
+
 		<footer class="site-footer">
-			<div class="footer-social-links">
-				<a href="https://www.youtube.com/@Valoneu" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-				<a href="https://twitter.com/ValoneuPOX" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-				<a href="https://github.com/Valoneu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-			</div>
+			<div class="footer-social-links"><a href="https://www.youtube.com/@Valoneu" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a><a href="https://twitter.com/ValoneuPOX" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="https://github.com/Valoneu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
 			<p>© <span id="current-year"></span> Valoneu. All rights reserved.</p>
-			<p><a href="#top" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a></p>
+			<p><a href="#top" class="back-to-top">Back to Top <i class="fas fa-angle-double-up"></i></a></p>
 		</footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
