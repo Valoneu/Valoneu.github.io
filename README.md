@@ -1,4 +1,3 @@
-<!-- README.md -->
 # Valoneu's Portfolio Website
 
 This repository contains the code for my personal portfolio website, hosted using GitHub Pages.
