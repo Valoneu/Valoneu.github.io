@@ -1,94 +1,470 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 		<title>Valoneu // Portfolio</title>
-		<meta name="description" content="Hi, I'm Valoneu. Check out my work in coding, 3D art, and game modding.">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="img/Iconround.png">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="styles.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+		<meta
+			name="description"
+			content="Hi, I'm Valoneu. Check out my work in coding, 3D art, and game modding."
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="img/Iconround.png"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
 	</head>
+
 	<body>
-		<div class="cursor-outline"></div>
 		<div class="cursor-dot"></div>
-		<div id="particles-js"></div>
+		<header id="header">
+			<nav>
+				<a
+					href="#hero"
+					class="logo"
+					id="main-logo"
+					>Valoneu</a
+				>
+				<ul>
+					<li>
+						<a
+							href="#hero"
+							class="active"
+							>Home</a
+						>
+					</li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+				</ul>
+			</nav>
+		</header>
 
-		<nav>
-			<div class="logo"><h1 data-value="Valoneu">Valoneu</h1></div>
-			<ul class="nav-links"><li><a href="#main-intro">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#blog">Blog</a></li></ul>
-			<div class="nav-controls">
-				<button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme"><i class="fas fa-sun"></i> <i class="fas fa-moon"></i></button>
-				<ul class="social-icons"><li><a class="nav-item" target="_blank" href="https://www.youtube.com/@Valoneu" aria-label="YouTube"><img class="icon" src="img/youtube.png" alt="YouTube Icon"></a></li><li><a class="nav-item" target="_blank" href="https://twitter.com/ValoneuPOX" aria-label="Twitter"><img class="icon" src="img/twitter.png" alt="Twitter Icon"></a></li><li><a class="nav-item" target="_blank" href="https://github.com/Valoneu" aria-label="GitHub"><img class="icon" src="img/github.png" alt="GitHub Icon"></a></li></ul>
-			</div>
-		</nav>
+		<main>
+			<section id="hero">
+				<div class="blob blob1"></div>
+				<div class="blob blob2"></div>
+				<div class="section-content-wrapper hero-content">
+					<h1 id="hero-title">Valoneu.</h1>
+					<p class="subtitle">Code, Art, Games.</p>
+					<p class="tagline">Hi, I'm Valoneu. Check out my work in coding, 3D art, and game modding.</p>
+					<a
+						href="#projects"
+						class="cta-button"
+					>
+						<span>View My Work</span>
+					</a>
+				</div>
+			</section>
 
-		<main id="main-intro" class="main-intro-section centered-intro">
-			<div class="intro-text animate-load">
-				<h2>Valoneu.</h2>
-				<p class="intro-tagline">Code, Art, Interaction.</p>
-			</div>
+			<section id="about">
+				<div class="blob blob1"></div>
+				<div class="section-content-wrapper">
+					<h2 class="section-title"><span>About Me</span></h2>
+					<div class="about-content">
+						<div class="about-image">
+							<img
+								src="img/me.png"
+								alt="Valoneu"
+								width="160"
+								height="160"
+								draggable="false"
+							/>
+						</div>
+						<div class="about-text">
+							<p>Hey there! I'm a Computer Science student at CVUT FIT in Prague. I enjoy combining technology with creative work, focusing on coding, 3D modeling, and game modding.</p>
+							<p>I program in C++, C#, Java, JavaScript, Lua and Python, and have some experience with databases. For art, I use Blender for 3D projects and Aseprite for pixel art. I particularly like modding games like Factorio and Unity games. Building interfaces with HTML, CSS, and JavaScript is also something I enjoy.</p>
+							<p>I'm always trying to learn more in both programming and art. This website shows some of my work.</p>
+
+							<a
+								href="nothing.pdf"
+								download
+								class="cta-button resume-button"
+							>
+								<i class="fas fa-file-alt"></i>
+								<span>My Resume (Link Soon)</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills">
+				<div class="blob blob1"></div>
+				<div class="section-content-wrapper skills-grid-container">
+					<h2 class="section-title"><span>What I Can Do</span></h2>
+					<div class="skills-grid">
+						<div class="skill-category">
+							<h4>Coding & Web</h4>
+							<ul>
+								<li>C++ (Performance)</li>
+								<li>C# (Unity, Applications)</li>
+								<li>Java (Backend Development)</li>
+								<li>Python (Scripting, Tools)</li>
+								<li>Lua (Modding)</li>
+								<li>JavaScript (Websites, UI)</li>
+								<li>HTML & CSS (Web Pages, UI)</li>
+							</ul>
+							<span class="corner-glyph">❖</span>
+						</div>
+						<div class="skill-category">
+							<h4>Art & Design</h4>
+							<ul>
+								<li>Blender (3D Modeling)</li>
+								<li>Aseprite (Pixel Art)</li>
+								<li>Substance Painter (Texturing)</li>
+								<li>Hard Surface Modeling</li>
+								<li>Visual Design</li>
+							</ul>
+							<span class="corner-glyph">❖</span>
+						</div>
+						<div class="skill-category">
+							<h4>Tools & Skills</h4>
+							<ul>
+								<li>Git & GitHub (Version Control)</li>
+								<li>Game Modding (Unity, Factorio)</li>
+								<li>PostgreSQL (Databases)</li>
+								<li>Linux Usage</li>
+								<li>Problem Solving</li>
+								<li>Team Collaboration</li>
+							</ul>
+							<span class="corner-glyph">❖</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects">
+				<div class="blob blob1"></div>
+				<div class="section-content-wrapper projects-container">
+					<h2 class="section-title"><span>Projects</span></h2>
+					<div class="project-filters">
+						<button
+							class="active"
+							data-filter="all"
+						>
+							All
+						</button>
+						<button data-filter="code">Code</button>
+						<button data-filter="3d">3D Art</button>
+						<button data-filter="pixel">Pixel Art</button>
+						<button data-filter="other">Other</button>
+					</div>
+					<div class="projects-grid">
+						<div
+							class="project-card"
+							data-category="code gamemod"
+						>
+							<div class="project-image">
+								<img
+									src="img/DSP.webp"
+									alt="DSP Mod Icon"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>DSP Game Mods</h3>
+								<p>Mods for Dyson Sphere Program (C#)</p>
+								<div class="project-tags"><span>C#</span><span>Game Mod</span></div>
+								<a
+									href="https://github.com/Valoneu/DysonSphereMods"
+									class="project-link"
+									target="_blank"
+									>See Code</a
+								>
+								<span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="code gamemod"
+						>
+							<div class="project-image">
+								<img
+									src="img/timberborn.webp"
+									alt="Timberborn Mod Icon"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>Timberborn Game Mods</h3>
+								<p>Mods for Timberborn (C#)</p>
+								<div class="project-tags"><span>C#</span><span>Game Mod</span></div>
+								<a
+									href="https://github.com/Valoneu/TimberbornMods"
+									class="project-link"
+									target="_blank"
+									>See Code</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="code gamemod"
+						>
+							<div class="project-image">
+								<img
+									src="img/factorio.webp"
+									alt="Factorio Mod Icon"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>Factorio Game Mods</h3>
+								<p>Mods for Factorio (Lua)</p>
+								<div class="project-tags"><span>Lua</span><span>Game Mod</span></div>
+								<a
+									href="https://github.com/Valoneu/FactorioMods"
+									class="project-link"
+									target="_blank"
+									>See Code</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="code web desktop other"
+						>
+							<div class="project-image">
+								<img
+									src="img/WPapp.webp"
+									alt="Desktop Info App Screenshot"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>Desktop Info App</h3>
+								<p>Shows PC stats on desktop (JS/Web)</p>
+								<div class="project-tags"><span>JavaScript</span><span>Web Tech</span><span>Desktop</span></div>
+								<a
+									href="https://github.com/Valoneu/Desktop-background-app"
+									class="project-link"
+									target="_blank"
+									>See Code</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="3d design other"
+						>
+							<div class="project-image">
+								<img
+									src="img/Blender1.webp"
+									alt="3D Table Design Render"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>3D Table Design</h3>
+								<p>Furniture concept (Blender)</p>
+								<div class="project-tags"><span>Blender</span><span>3D Art</span><span>Design</span></div>
+								<a
+									href="#"
+									class="project-link"
+									target="_self"
+									>View Image</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="3d fanart"
+						>
+							<div class="project-image">
+								<img
+									src="img/Blender2.webp"
+									alt="Frieren Staff 3D Render"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>Frieren's Staff (3D)</h3>
+								<p>Anime prop recreation (Blender)</p>
+								<div class="project-tags"><span>Blender</span><span>3D Art</span><span>Fan Art</span></div>
+								<a
+									href="#"
+									class="project-link"
+									target="_self"
+									>View Image</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="3d scifi"
+						>
+							<div class="project-image">
+								<img
+									src="img/Blender3.webp"
+									alt="Sci-Fi Arm 3D Render"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>Sci-Fi Arm (3D)</h3>
+								<p>Hard surface practice (Blender)</p>
+								<div class="project-tags"><span>Blender</span><span>3D Art</span><span>Sci-Fi</span></div>
+								<a
+									href="#"
+									class="project-link"
+									target="_self"
+									>View Image</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="3d abstract"
+						>
+							<div class="project-image">
+								<img
+									src="img/Blender4.webp"
+									alt="Abstract 3D Cube Render"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>Abstract 3D Cube</h3>
+								<p>Geometric art experiment (Blender)</p>
+								<div class="project-tags"><span>Blender</span><span>3D Art</span><span>Abstract</span></div>
+								<a
+									href="#"
+									class="project-link"
+									target="_self"
+									>View Image</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="pixel"
+						>
+							<div class="project-image">
+								<img
+									src="img/Barrelpixel.webp"
+									alt="Pixel Art Barrel"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>Pixel Art Barrel</h3>
+								<p>Pixel art practice (Aseprite)</p>
+								<div class="project-tags"><span>Aseprite</span><span>Pixel Art</span></div>
+								<a
+									href="#"
+									class="project-link"
+									target="_self"
+									>View Art</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="pixel gameasset"
+						>
+							<div class="project-image">
+								<img
+									src="img/Isometrictilemap32x32.webp"
+									alt="Pixel Art Tileset"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>Pixel Art Tileset</h3>
+								<p>Isometric game tiles (Aseprite)</p>
+								<div class="project-tags"><span>Aseprite</span><span>Pixel Art</span><span>Game Asset</span></div>
+								<a
+									href="#"
+									class="project-link"
+									target="_self"
+									>View Art</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+						<div
+							class="project-card"
+							data-category="code web other"
+						>
+							<div class="project-image">
+								<img
+									src="img/site.webp"
+									alt="This Portfolio Site"
+									draggable="false"
+								/>
+							</div>
+							<div class="project-card-content">
+								<h3>This Portfolio Site</h3>
+								<p>Built with HTML, CSS, JS (and AI help!)</p>
+								<div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web</span></div>
+								<a
+									href="https://github.com/Valoneu/valoneu.github.io"
+									class="project-link"
+									target="_blank"
+									>View Source</a
+								><span class="corner-glyph">❖</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
-		<section id="about" class="content-section about-section">
-			<div class="section-content-wrapper">
-				<h2>About Me</h2>
-				<p>Hey there! I'm a Computer Science student at CVUT FIT in Prague. I enjoy combining technology with creative work, focusing on coding, 3D modeling, and game modding.<br><br>I program in C++, C#, Java, JavaScript, and Python, and have some experience with databases. For art, I use Blender for 3D projects and Aseprite for pixel art. I particularly like modding games like Factorio and Unity games. Building interfaces with HTML, CSS, and JavaScript is also something I enjoy.<br><br>I'm always trying to learn more in both programming and art. This website shows some of my work. Feel free to check out my blog for updates on what I'm up to.</p>
-				<a href="nothing.pdf" download class="button resume-button"><i class="fas fa-file-alt"></i> My Resume (Link Soon)</a>
-			</div>
-		</section>
+		<div
+			id="lightbox"
+			class="lightbox"
+		>
+			<span class="lightbox-close">×</span>
+			<img
+				id="lightbox-img"
+				src=""
+				alt="Fullscreen project image"
+				draggable="false"
+			/>
+		</div>
 
-		<section id="skills" class="content-section skills-section">
-			<div class="section-content-wrapper">
-				<h2>What I Can Do</h2>
-				<div class="skills-grid">
-					<div class="skill-category animate-on-scroll"><h3><i class="fas fa-terminal"></i> Coding & Web</h3><ul><li>C++ (Performance)</li><li>C# (Unity, Applications)</li><li>Java (Backend Development)</li><li>Python (Scripting, Tools)</li><li>JavaScript (Websites, UI)</li><li>HTML & CSS (Web Pages, UI)</li></ul></div>
-					<div class="skill-category animate-on-scroll"><h3><i class="fas fa-drafting-compass"></i> Art & Design</h3><ul><li>Blender (3D Modeling)</li><li>Aseprite (Pixel Art)</li><li>Substance Painter (Texturing)</li><li>Hard Surface Modeling</li><li>Visual Design</li></ul></div>
-					<div class="skill-category animate-on-scroll"><h3><i class="fas fa-wrench"></i> Tools & Skills</h3><ul><li>Git & GitHub (Version Control)</li><li>Game Modding (Unity, Factorio)</li><li>PostgreSQL (Databases)</li><li>Linux Usage</li><li>Problem Solving</li><li>Team Collaboration</li></ul></div>
+		<footer>
+			<p><span class="deco-char">⊹</span> © <span id="year">2025</span> Valoneu. All rights reserved. <span class="deco-char">⊹</span></p>
+			<div class="footer-links">
+				<div class="footer-socials">
+					<a
+						href="https://www.youtube.com/@Valoneu"
+						target="_blank"
+						aria-label="YouTube"
+						><i class="fab fa-youtube"></i
+					></a>
+					<a
+						href="https://twitter.com/ValoneuPOX"
+						target="_blank"
+						aria-label="Twitter"
+						><i class="fab fa-twitter"></i
+					></a>
+					<a
+						href="https://github.com/Valoneu"
+						target="_blank"
+						aria-label="GitHub"
+						><i class="fab fa-github"></i
+					></a>
 				</div>
+				<span class="footer-separator"><span class="outer">◦</span> <span class="inner">●</span> <span class="outer">◦</span></span>
+				<a href="#hero">Back <span class="deco-char">◇</span> to Top <i class="fas fa-angle-double-up"></i></a>
 			</div>
-		</section>
-
-		<section id="projects" class="content-section projects-section">
-			<div class="section-content-wrapper">
-				<h2>My Projects</h2>
-				<div class="project-filters"><button class="filter-button active" data-filter="all">All</button><button class="filter-button" data-filter="code">Code</button><button class="filter-button" data-filter="blender">3D Art</button><button class="filter-button" data-filter="pixelart">Pixel Art</button><button class="filter-button" data-filter="other">Other</button></div>
-				<div class="project-grid">
-					<div class="project-card animate-on-scroll" data-category="code"><div class="project-image"><img src="./img/DSP.webp" alt="DSP Mods"><div class="project-image-overlay"><h4>DSP Game Mods</h4><a href="https://github.com/Valoneu/DysonSphereMods" class="button button-view-project" target="_blank">See Code</a></div></div><div class="project-content-brief"><p>Mods for Dyson Sphere Program (C#)</p></div></div>
-					<div class="project-card animate-on-scroll" data-category="code"><div class="project-image"><img src="/img/timberborn.webp" alt="Timberborn Mods"><div class="project-image-overlay"><h4>Timberborn Game Mods</h4><a href="https://github.com/Valoneu/TimberbornMods" class="button button-view-project" target="_blank">See Code</a></div></div><div class="project-content-brief"><p>Mods for Timberborn (C#)</p></div></div>
-					<div class="project-card animate-on-scroll" data-category="code"><div class="project-image"><img src="./img/factorio.webp" alt="Factorio Mods"><div class="project-image-overlay"><h4>Factorio Game Mods</h4><a href="https://github.com/Valoneu/FactorioMods" class="button button-view-project" target="_blank">See Code</a></div></div><div class="project-content-brief"><p>Mods for Factorio (Lua)</p></div></div>
-					<div class="project-card animate-on-scroll" data-category="code other"><div class="project-image"><img src="./img/WPapp.webp" alt="Desktop App"><div class="project-image-overlay"><h4>Desktop Info App</h4><a href="https://github.com/Valoneu/Desktop-background-app" class="button button-view-project" target="_blank">See Code</a></div></div><div class="project-content-brief"><p>Shows PC stats on desktop (JS/Web)</p></div></div>
-					<div class="project-card animate-on-scroll" data-category="blender"><div class="project-image"><img src="./img/Blender1.webp" alt="3D Table"><div class="project-image-overlay"><h4>3D Table Design</h4><a href="#" class="button button-view-project disabled" target="_blank">View Image</a></div></div><div class="project-content-brief"><p>Furniture concept (Blender)</p></div></div>
-					<div class="project-card animate-on-scroll" data-category="blender"><div class="project-image"><img src="./img/Blender2.webp" alt="3D Staff"><div class="project-image-overlay"><h4>Frieren's Staff (3D)</h4><a href="#" class="button button-view-project disabled" target="_blank">View Image</a></div></div><div class="project-content-brief"><p>Anime prop recreation (Blender)</p></div></div>
-					<div class="project-card animate-on-scroll" data-category="blender"><div class="project-image"><img src="./img/Blender3.webp" alt="3D Arm"><div class="project-image-overlay"><h4>Sci-Fi Arm (3D)</h4><a href="#" class="button button-view-project disabled" target="_blank">View Image</a></div></div><div class="project-content-brief"><p>Hard surface practice (Blender)</p></div></div>
-					<div class="project-card animate-on-scroll" data-category="blender"><div class="project-image"><img src="./img/Blender4.webp" alt="3D Cube Art"><div class="project-image-overlay"><h4>Abstract 3D Cube</h4><a href="#" class="button button-view-project disabled" target="_blank">View Image</a></div></div><div class="project-content-brief"><p>Geometric art experiment (Blender)</p></div></div>
-					<div class="project-card animate-on-scroll" data-category="pixelart"><div class="project-image"><img src="/img/Barrelpixel.webp" alt="Pixel Barrel"><div class="project-image-overlay"><h4>Pixel Art Barrel</h4><a href="#" class="button button-view-project disabled" target="_blank">View Art</a></div></div><div class="project-content-brief"><p>Pixel art practice (Aseprite)</p></div></div>
-					<div class="project-card animate-on-scroll" data-category="pixelart"><div class="project-image"><img src="/img/Isometrictilemap32x32.webp" alt="Pixel Tiles"><div class="project-image-overlay"><h4>Pixel Art Tileset</h4><a href="#" class="button button-view-project disabled" target="_blank">View Art</a></div></div><div class="project-content-brief"><p>Isometric game tiles (Aseprite)</p></div></div>
-				</div>
-			</div>
-		</section>
-
-		<section id="blog" class="content-section blog-section">
-			<div class="section-content-wrapper">
-				<h2>Blog & Updates</h2>
-				<div class="blog-posts-grid">
-					<article class="blog-post-summary animate-on-scroll"><img src="./img/site.webp" alt="Blog Post Image" class="blog-summary-image"><div class="blog-summary-content"><h3 class="blog-summary-title">Building This Site With AI Help</h3><p class="blog-summary-meta">Posted on <time datetime="2025-04-06">April 6, 2025</time></p><p class="blog-summary-excerpt">How I used AI tools like ChatGPT to help build this website. A look at the process and what I learned.</p><a href="blog1.html" class="button blog-read-more">Read More</a></div></article>
-				</div>
-			</div>
-		</section>
-
-		<footer class="site-footer">
-			<div class="footer-social-links"><a href="https://www.youtube.com/@Valoneu" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a><a href="https://twitter.com/ValoneuPOX" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="https://github.com/Valoneu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
-			<p>© <span id="current-year"></span> Valoneu. All rights reserved.</p>
-			<p><a href="#top" class="back-to-top">Back to Top <i class="fas fa-angle-double-up"></i></a></p>
 		</footer>
 
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
